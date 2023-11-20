@@ -1,0 +1,131 @@
+.user-image
+{
+     
+   padding: 1rem;
+   filter: grayscale(1);
+   transition: all 1s;
+   animation: scaleImage 5s linear infinite;
+}
+ 
+.user-image img{
+   z-index: -1;
+   width: 97%;
+}
+@keyframes scaleImage {
+   0%
+   {
+filter: grayscale(1);
+transform: scale(1);
+   }
+   50%{
+transform: scale(1.1);
+filter: grayscale(0);
+box-shadow:  3px 3px 10px black;
+   }
+   100%
+   {
+filter: grayscale(1);
+transform: scale(1);
+   }
+}
+
+.icon-dot
+{
+   z-index: 1;
+   bottom: -1rem;
+   right: 0;
+   animation: dotAnimation 5s linear infinite;
+}
+@keyframes dotAnimation {
+   0%
+   {
+       transform: translateY(0px);
+   }
+   50%
+   {
+       transform: translateY(-15px);
+   } 
+    100%
+   {
+       transform: translateY(0px);
+   }
+}
+.icon-cube
+{
+   z-index: 1;
+   right: 1em;
+   top: -0.8em;
+   animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+   0%
+   {
+       transform: rotateY(0deg) translateY(0px);
+        
+   }
+   50%
+   {
+       transform: rotateY(180deg) translateY(-12px);
+   }
+   100%
+   {
+       transform: rotateY(180deg) translateY(0px);
+   }
+   
+}
+.icon-circle
+{
+   z-index: 1;
+   bottom: -10px;
+   left: 0;
+   animation: movement 5.3s linear infinite;
+}
+
+@keyframes movement {
+   0%
+   {
+      left: 0;
+      bottom: 0;
+        
+   }
+   50%
+   {
+       left: 5%;
+       bottom: 10%;
+   }
+   100%
+   {
+       left: 0;
+       bottom: 0;
+   }
+}
+
+.icon-zigzag
+{
+   z-index: 1;
+   top: 1.5rem;
+   left: -.3em;
+   animation: zigzag 5.3s linear infinite;
+}
+@keyframes zigzag {
+   50%
+   {
+       left: 5%;
+       top: 2%;
+   }
+}
+
+.icon-plus
+{
+   z-index: 1;
+   top: -.8rem;
+   left: 50%;
+   animation: plus 5.3s linear infinite;
+}
+@keyframes plus {
+   50%
+   {
+       left: 48%;
+       top: 3%;
+   }
+}

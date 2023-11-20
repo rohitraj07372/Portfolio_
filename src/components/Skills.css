@@ -1,0 +1,60 @@
+.bluebg{
+    background-image: url(../assets/bluebg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.glassmorphic-container {
+    background: rgba(9, 7, 146, 0.15); /* Background color with transparency */
+    border-radius: 12px; /* Adjust the border radius based on your preference */
+    backdrop-filter: blur(10px); /* Apply a background blur */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border color with transparency */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Box shadow for a soft glow effect */
+    padding: 20px; /* Adjust padding based on your content */
+    z-index: 10;
+  }
+
+  .circle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background-color: rgb(255, 54, 88);
+    
+
+  }
+
+   
+  .moving{
+    animation: moving 8s linear   infinite  ;
+  }
+
+  @keyframes moving {
+    0%, 100% { transform: translateX(-30%); }
+    50% { transform: translateY(-20px); }
+  }
+  .circle_blue{
+    width: 10rem;
+    height: 10rem;
+     
+    border-radius: 100%;
+    background-color: rgb(124, 54, 255);
+    
+  }
+
+  .moving2{
+    animation: moving2 8s linear infinite  ;
+  }
+
+  @keyframes moving2 {
+    0%, 100% { transform: translateX(-50%); }
+    50% { transform: translateY(-50px); scale: 1.2; }
+  }
+  .circle_blue{
+    width: 10rem;
+    height: 10rem;
+     
+    border-radius: 100%;
+    background-color: rgb(124, 54, 255);
+    
+  }
