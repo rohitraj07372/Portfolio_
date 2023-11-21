@@ -14,7 +14,9 @@ function FullDetails({cardId}) {
       <div className=' justify-center font-bold text-2xl flex    '>   
         {
           <p className='capitalize text-[#FFF24F]  xs:mb-8 sm:mb-8 bg-[#4D6AFF]  self-center px-3 py-2 rounded-md'>{selectedData.title}</p>
+       
         }
+          { console.log(selectedData.title)}
       </div>
       <div className= 'xs:flex xs:flex-col xs:justify-center xs:items-center sm:flex sm:flex-col sm:justify-center sm:items-center md:flex-row md:gap-8 md:justify-between md:items-start lg:flex-row lg:gap-8 lg:items-start lg:justify-between flex text-slate-700 font-serif gap-10 justify-between'>
             <div className='max-w-[50%]'>
@@ -29,8 +31,8 @@ function FullDetails({cardId}) {
               <p className='mt-1 mb-1'>{ selectedData.desc.Technology}</p>
             </div>
             <div>
-              <div className=' flex flex-col gap-3'>
-              <ReactPlayer controls playing loop url={selectedData.video}  type='video/mp4' width='400px' height="auto"/>
+              <div className=' flex flex-col gap-3 '>
+              <div className='rounded-md'><ReactPlayer  controls playing loop url={selectedData.video}   type='video/mp4' width='400px' height="auto"/></div>
              
              
               

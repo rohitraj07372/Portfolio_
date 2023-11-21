@@ -8,6 +8,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Butterfly from './components/Butterfly';
 import Footer from './components/Footer';
+import ProjectDetails from './pages/ProjectDetails';
  
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
      <Route path='/' element={<Home/>}/>
      <Route path='/about' element={<About/>}/>
      <Route path='/projects' element={<Projects/>}/>
+     <Route path="/projects#projectDetails" component={ProjectDetails} />
      
 
      

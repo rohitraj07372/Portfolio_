@@ -3,6 +3,7 @@ import { useState } from 'react'
 import ProjectDetails from '../pages/ProjectDetails'
 import Card from './Card'
 import { Link  } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
  
 
  
@@ -24,14 +25,14 @@ function Cards({data}) {
             return <div className='flex justify-center ' key={data.id} onClick={()=>{
               selectedCard(data.id)
              
-            }} ><a href="#projectDetails"  >  <Card details =  {data}  id={data.id}/></a> </div>
+            }} ><ScrollLink to='projectDetails'   ><Link to='/projects#projectDetails'><Card details =  {data}  id={data.id}/></Link></ScrollLink>   </div>
         })
         
       }
       
      
     </div>
-    <div id='projectDetails'  ><ProjectDetails cardId = {cardId} /></div>
+    <div  id='projectDetails' ><ProjectDetails cardId = {cardId} /></div>
     
     </div>
   )
