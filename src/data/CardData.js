@@ -1,7 +1,7 @@
  import calculator from '../assets/projectImage/calculator.PNG'
  import password from '../assets/projectImage/password.PNG'
  import tictacj from '../assets/projectImage/tictacj.PNG'
-
+import portfolio from '../assets/projectImage/portfolio.PNG'
  import weather from '../assets/projectImage/weather.PNG'
  import dev from '../assets/projectImage/dev.PNG'
  import maths from '../assets/projectImage/maths.PNG'
@@ -150,12 +150,42 @@ Users are left amazed as Math Magic accurately predicts their final answers, lea
     title:"Math Magic",
     link:"https://rohitraj07372.github.io/Js_projects/mathMagic/"
 },
-// {id: 7,
-//     image: 'Object 2' ,
-//     desc: "",
-//     title:"project title",
-//     link:""
+{id: 7,
+    
+    git:"https://github.com/rohitraj07372/Portfolio_/tree/master",
+    image: portfolio ,
+    video:"https://drive.google.com/uc?export=download&id=1GSWwf4-npVGckeQrLSNnGtWrtd_G7gR8",
+    desc: {
+        Overview:`Explore my journey and expertise through my Personal Portfolio, a dynamic single-page application built using React Router DOM. This platform serves as a comprehensive showcase of my professional journey, projects, and skills. Navigating through the seamless user interface, you'll discover the following 
+        key sections:                                                           
+           1. Home:Welcome to the heart of my digital presence. The Home section provides a brief introduction to who I am and sets the tone for the entire portfolio experience.
 
+           2. About: Dive deeper into my background, skills, and passions in the About section. Learn about the experiences that have shaped me as a professional, and get a sense of the skills and expertise I bring to the table 
+
+           3. Projects: Embark on a journey through my Projects section, where I showcase a curated selection of my most impactful works. Each project is accompanied by a detailed description, highlighting the technologies used, challenges overcome, and the impact on end-users.
+
+           4. Resume: Experience seamless access to my resume with just a click! The Resume section provides a downloadable version of my resume, ensuring you have easy access to my professional credentials."`,
+        features:{
+            1:`React Router DOM:
+             Seamlessly navigate through different sections of the portfolio with React Router DOM, providing a smooth and dynamic user experience.`,
+2:`Project Showcase: 
+Explore a diverse range of projects, each with its unique story, challenges, and outcomes.`,
+
+3:`Resume Download: 
+Facilitate easy access to my resume for potential employers, collaborators, or anyone interested in learning more about my professional background.`,
+        },
+        Technology:`  React.js: 
+        Building a responsive and interactive user interface.
+React Router:  
+ Enabling smooth navigation within the single-page application.
+HTML/CSS:
+ Ensuring a visually appealing and accessible design.`,
+       
+       },
+    title:"Portfolio ",
+    link:"https://rohitraj07372.github.io/Portfolio_/#/"
+},
+ 
 // },
 
 // {id: 8,
