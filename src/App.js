@@ -13,7 +13,7 @@ import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
   return (
-    <div className=" h-screen   -mt-12">
+    <div className=" h-screen  ">
     <Butterfly/>
    <Navbar/>
     
