@@ -22,10 +22,10 @@ function Cards({data}) {
       {
         data.map((data)=>{
            
-            return <div className='flex justify-center ' key={data.id} onClick={()=>{
+            return <ScrollLink to='projectDetails'   ><div className='flex justify-center ' key={data.id} onClick={()=>{
               selectedCard(data.id)
              
-            }} ><ScrollLink to='projectDetails'   ><Link to='/projects#projectDetails'><Card details =  {data}  id={data.id}/></Link></ScrollLink>   </div>
+            }} ><Link to='/projects#projectDetails'><Card details =  {data}  id={data.id}/></Link>    </div></ScrollLink>
         })
         
       }
