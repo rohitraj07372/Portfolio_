@@ -2,6 +2,7 @@ import React from 'react'
 import data from '../data/CardData'
 import { FaGithubAlt } from "react-icons/fa";
 import ReactPlayer from 'react-player'
+import './fullDetails.css'
 
 function FullDetails({cardId}) {
   const selectedData = data.find(data =>data.id === cardId);
@@ -18,8 +19,8 @@ function FullDetails({cardId}) {
         }
           { console.log(selectedData.desc.Overview)}
       </div>
-      <div className= 'xs:flex xs:flex-col xs:justify-center xs:items-center sm:flex sm:flex-col sm:justify-center sm:items-center md:flex-row md:gap-8 md:justify-between md:items-start lg:flex-row lg:gap-8 lg:items-start lg:justify-between flex text-slate-700 font-serif gap-10 justify-between'>
-            <div className='max-w-[50%]'>
+      <div className= 'xs:flex xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:flex-col sm:justify-center sm:items-center md:flex-row md:gap-8 md:justify-between md:items-start lg:flex-row lg:gap-8 lg:items-start lg:justify-between flex text-slate-700 font-serif gap-10 justify-between'>
+            <div className='xs:max-w-[100%] md:max-w-[60%] lg:max-w-[50%]'>
               <p className='font-bold text-[#4D6AFF] text-xl underline mb-2'>Overview:</p>
               <p className=' italic font-serif leading-7 mb-1 whitespace-pre-line'>{selectedData.desc.Overview}</p>
               <p className='font-bold text-[#4D6AFF] text-xl underline mb-2'>Features:</p>
@@ -37,8 +38,8 @@ function FullDetails({cardId}) {
              
               
               <div className='relative group'>
-                <div className='absolute bottom-2 z-10 bg-yellow-300 text-blue-800 px-3 py-1 rounded-md font-bold text-xl opacity-0 group-hover:opacity-100 group-hover:scale-110 duration-300 left-[50%] -translate-x-[50%] transition-opacity  '>Go to Project</div>
-              <a href={selectedData.link} target='_password'><img className='rounded-lg group-hover:scale-110 transition-all ' src={selectedData.image} alt=""  width='400px'/></a>
+                <div className='absolute left-0 bottom-2 z-10 bg-blue-800 text-yellow-300 px-3 py-1   font-bold text-xl w-[40%] group-hover:w-full  transition-all   duration-300  ease-in-out  '><p>Go to project</p></div>
+              <a href={selectedData.link} target='_password'><img className='rounded-lg   transition-all ' src={selectedData.image} alt=""  width='400px'/></a>
               </div>
               <a href={selectedData.git} target='_git'><div className='flex gap-3 py-1 rounded-full bg-yellow-400 justify-center items-center text-xl font-bold font-serif hover:bg-blue-700 hover:text-white transition-all duration-300 '>
               <div><FaGithubAlt /></div>

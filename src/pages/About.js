@@ -9,7 +9,7 @@ import profile2 from '../assets/profile2.jpg'
 import Skills from '../../../portfolio_/src/components/Skills'
 
 
-function About() {
+function About({hamIsClicked, setHamIsClicked}) {
   const [hover, setHover] = useState(false);
 
   function handleMouseEnter(){
@@ -21,7 +21,7 @@ const handleMouseLeave = ()=>{
 
 
   return (
-    <div className='bg-[#f8ecae] pb-4 '>
+    <div className={`bg-[#f8ecae] pb-4 transition-all duration-300 ease-in ${hamIsClicked?"blur-sm opacity-80 ":""}`}>
       <p className='font-bold text-4xl  w-full text-center mb-6 underline text-[#4D6AFF]  pt-4  '>Welcome to Rohit Kumar's Portfolio</p>
       <div className='flex justify-between w-10/12 mx-auto xs:flex-col-reverse sm:flex-col-reverse sm:items-center md:justify-between lg:justify-between md:items-start lg:items-start sm:w-full md:w-10/12 lg:w-10/12 md:flex-row sm:mx-auto xs:mx-auto xs:items-center xs:w-full  lg:flex-row '>
       <div className='w-[50%] xs:w-10/12 sm:w-10/12  md:w-[50%] lg:w-[50%] text-[#4D6AFF] '>

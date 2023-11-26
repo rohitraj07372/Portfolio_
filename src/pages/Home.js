@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 import {BiSolidChevronsRight} from 'react-icons/bi'
 
 
-function Home() {
+function Home({hamIsClicked, setHamIsClicked}) {
   return (
-    <div className="w-full h-full bg-[#fdf8a9]">
+    <div className={`w-full h-full bg-[#fdf8a9] transition-all duration-300 ease-in ${hamIsClicked?"blur-sm opacity-80 ":""}`}>
 
      
     <div className='  w-10/12  mx-auto flex gap-2  xs:flex-col-reverse xs:gap-3  xs:justify-evenly xs:items-center  sm:flex-col-reverse xs:h-screen  sm:h-screen  md:flex-row lg:flex-row justify-between items-center md:h-[calc(100vh-3.5rem)]  lg:h-[calc(100vh-3.5rem)]  '>
@@ -32,7 +32,7 @@ function Home() {
 
        <div className='relative flex justify-center items-center w-[50%] '>
         <div className='rotate_image z-10 '> <img src={animbg} alt="" /></div>
-        <div className='absolute  move shadow-sm z-10  '><img src={buddha} alt="" width='160rem' /></div>
+        <div className='absolute  move shadow-sm z-10  '><img src={buddha} alt="" width='150rem' /></div>
         
        </div>
     </div>

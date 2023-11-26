@@ -1,0 +1,8 @@
+.hover{
+
+    transition: all 0.3 ease-in;
+}
+
+.hover:hover{
+    width: 100%;
+}
