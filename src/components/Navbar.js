@@ -16,8 +16,8 @@ function Navbar({hamIsClicked, setHamIsClicked}) {
        hamIsClicked?setHamIsClicked(false):setHamIsClicked(true);
     }
   return (
-    <div className='bg-[#FFE24F] h-[3.5rem] flex items-center z-[70] '>
-     <nav className='z-[20]  flex relative justify-between w-8/12 mx-auto sm:mx-auto xs:mx-auto   items-center sm:w-11/12 xs:w-11/12 md:w-8/12 lg:w-8/12'>
+    <div className='bg-[#FFE24F] h-[3.5rem] flex items-center z-[70] fixed top-0 w-full '>
+     <nav className='z-[15]  flex relative justify-between w-8/12 mx-auto sm:mx-auto xs:mx-auto   items-center sm:w-11/12 xs:w-11/12 md:w-8/12 lg:w-8/12'>
         <div>
         <Link to='/'><img className='rounded-full border-2 border-yellow-600' src={profile} alt="profile_image" width='40px' /></Link>
       </div>

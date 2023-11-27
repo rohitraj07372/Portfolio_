@@ -15,7 +15,7 @@ import { useState } from 'react';
 function App() {
   const [hamIsClicked, setHamIsClicked] = useState(false);
   return (
-    <div className=" h-screen  ">
+    <div className="  ">
     <Butterfly/>
     
    <Navbar hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked} />
@@ -29,7 +29,7 @@ function App() {
 
      
     </Routes>
-<Footer/>
+
  </div>
     
   );
