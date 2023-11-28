@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+ 
 import data from '../../../portfolio_/src/data/CardData'
 import Cards from '../../../portfolio_/src/components/Cards'
 
@@ -8,7 +8,7 @@ function Projects({hamIsClicked, setHamIsClicked}) {
   const cardData = data;
   console.log(data);
   return (
-    <div className={`bg-yellow-100 -z-10 transition-all duration-300 ease-in ${hamIsClicked?"blur-sm opacity-80 ":""}`}>
+    <div className={`bg-yellow-100    pt-6 -z-10 transition-all duration-300 ease-in ${hamIsClicked?"blur-sm opacity-80 ":""}`}>
         <Cards data = {cardData} />
     </div>
   )

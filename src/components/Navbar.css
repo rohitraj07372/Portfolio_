@@ -1,8 +1,10 @@
 .active{
-    background-color: rgb(44, 44, 44);
-    color:white;
-    border-radius: 4px;
-    transition: all .4s ease-in;
+    background-color: rgb(234 179 8  );
+    color:rgb(148, 101, 0);
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 1);
+    border-radius: 1000px;
+    transition: all .4s ease-in-out;
+    padding: .1rem;
      
 }
 

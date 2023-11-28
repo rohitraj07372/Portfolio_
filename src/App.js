@@ -10,6 +10,7 @@ import Butterfly from './components/Butterfly';
 import Footer from './components/Footer';
 import ProjectDetails from './pages/ProjectDetails';
 import { useState } from 'react';
+import Youtube from './pages/Youtube';
  
 
 function App() {
@@ -17,19 +18,24 @@ function App() {
   return (
     <div className="  ">
     <Butterfly/>
-    
-   <Navbar hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked} />
-    
+     <div>
+     <Navbar hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked} />
+      </div>  
+   
+    <div className='mt-[3.5rem]'>
     <Routes>
      <Route path='/' element={<Home hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path='/about' element={<About hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path='/projects' element={<Projects hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path="/projects#projectDetails" component={ProjectDetails} />
+     <Route path='/youtube' element={<Youtube/>}/>
      
 
      
     </Routes>
 
+    </div>
+   
  </div>
     
   );

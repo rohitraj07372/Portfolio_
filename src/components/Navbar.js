@@ -7,6 +7,7 @@ import {FaLinkedin} from 'react-icons/fa'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {HiPlusSm} from 'react-icons/hi'
 import './Navbar.css'
+import logo from '../assets/logo.png'
 
 function Navbar({hamIsClicked, setHamIsClicked}) {
     const yellow =' #FFE24F';
@@ -18,9 +19,14 @@ function Navbar({hamIsClicked, setHamIsClicked}) {
   return (
     <div className='bg-[#FFE24F] h-[3.5rem] flex items-center z-[70] fixed top-0 w-full '>
      <nav className='z-[15]  flex relative justify-between w-8/12 mx-auto sm:mx-auto xs:mx-auto   items-center sm:w-11/12 xs:w-11/12 md:w-8/12 lg:w-8/12'>
-        <div>
-        <Link to='/'><img className='rounded-full border-2 border-yellow-600' src={profile} alt="profile_image" width='40px' /></Link>
+
+     <Link to='/'>
+        <div className=' flex gap-3 items-center bg-yellow-500  shadow-inner p-1 shadow-yellow-950  
+         rounded-full w-[9rem]  '>
+        <img className='rounded-full  ' src={profile} alt="profile_image" width='40px' />
+         <img src={logo} alt="" width='70px'  className='  '/>
       </div>
+      </Link>
       < div className={` flex gap-3 text-[#2b2a2a] font-semibold font-serif    md:flex md:gap-3 lg:flex lg:gap-3 ${hamIsClicked?"xs:flex-col xs:absolute xs:top-12 xs:bg-yellow-200  sm:absolute sm:top-12 sm:left-0 sm:bg-yellow-200 md:relative md:bg-transparent md:top-[50%] lg:bg-transparent lg:relative lg:top-[50%]  xs:left-0    xs:gap-2 xs:w-full sm:flex-col sm:gap-2 sm:w-full  md:flex-row  md:gap-3 lg:flex-row lg:gap-3 md:place-content-center lg:place-content-center ": "xs:hidden  sm:hidden  md:flex-row  md:gap-3 lg:flex-row lg:gap-3 md:relative md:top-[50%] lg:relative lg:top-[50%]"}  `}>
 
         <NavLink to='/'>
@@ -31,6 +37,10 @@ function Navbar({hamIsClicked, setHamIsClicked}) {
         </NavLink>
         <NavLink to='/projects'>
         <h1 className='px-2'onClick={()=>setHamIsClicked(false)}>Projects</h1>
+        </NavLink>
+
+        <NavLink to='/youtube'>
+          <h1 className='px-2'onClick={()=>setHamIsClicked(false)}>Youtube</h1>
         </NavLink>
     
       </div>
