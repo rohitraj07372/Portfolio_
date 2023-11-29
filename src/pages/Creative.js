@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Youtube() {
+function Creative() {
   return (
     <div className='h-screen w-screen flex justify-center items-center font-bold text3xl'>
       Coming soon
@@ -8,4 +8,4 @@ function Youtube() {
   )
 }
 
-export default Youtube
+export default Creative

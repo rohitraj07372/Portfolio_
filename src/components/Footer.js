@@ -1,54 +1,41 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png'
+
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-6 text-center">
-      <div className="flex justify-center space-x-4">
-        {/* Social Media Links */}
-        <a href="https://github.com/rohitraj07372" target="_blank"  >
+    <footer className="bg-white text-gray-800 py-8">
+      <div className="container w-10/12 mx-auto flex items-center justify-between">
+        {/* Company Logo */}
+        <div className="flex items-center">
           <img
-            src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
-            alt="GitHub"
-            className="hover:opacity-75"
-          />
-        </a>
+            src={logo} // Replace with your company logo
+            alt="Company Logo"
+            className="w-40"
+          /> 
+          
+        </div>
 
-        <a href="https://www.linkedin.com/in/rohit-kumar-61101024b/" target="_blank"  >
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"
-            alt="LinkedIn"
-            className="hover:opacity-75"
-          />
-        </a>
-
-        <a href="https://instagram.com/your-instagram-username" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"
-            alt="Instagram"
-            className="hover:opacity-75"
-          />
-        </a>
+        {/* Social Links */}
+        <div className="flex items-center space-x-4">
+          <a href="https://www.facebook.com/profile.php?id=100007583531392" target="_blank" rel=" ">
+            <FaFacebook className="text-2xl hover:text-blue-700 transition-all" />
+          </a>
+          {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="text-2xl hover:text-blue-700 transition-all" />
+          </a> */}
+          <a href="https://www.instagram.com/artistan_73/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-2xl hover:text-blue-700 transition-all" />
+          </a>
+          <a href="https://www.linkedin.com/in/rohit-kumar-61101024b/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-2xl hover:text-blue-700 transition-all" />
+          </a>
+          <a href="https://github.com/rohitraj07372" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-2xl" />
+          </a>
+        </div>
       </div>
-
-      {/* Navigation Buttons */}
-      <div className="mt-4 space-x-4">
-        <Link to='/'><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Home
-        </button></Link>
-    <Link to='/about'><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          About
-        </button></Link>
-
-<Link to='/projects'> <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Projects
-        </button></Link>
-        
-       
-      </div>
-
-      {/* Additional Footer Content */}
-      <p className="mt-4">&copy; 2023 Rohit Kumar</p>
     </footer>
   );
 };

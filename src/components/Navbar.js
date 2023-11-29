@@ -40,7 +40,7 @@ function Navbar({hamIsClicked, setHamIsClicked}) {
         </NavLink>
 
         <NavLink to='/youtube'>
-          <h1 className='px-2'onClick={()=>setHamIsClicked(false)}>Youtube</h1>
+          <h1 className='px-2'onClick={()=>setHamIsClicked(false)}>Creative</h1>
         </NavLink>
     
       </div>

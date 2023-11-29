@@ -10,7 +10,7 @@ import Butterfly from './components/Butterfly';
 import Footer from './components/Footer';
 import ProjectDetails from './pages/ProjectDetails';
 import { useState } from 'react';
-import Youtube from './pages/Youtube';
+import Creative from './pages/Creative';
  
 
 function App() {
@@ -28,14 +28,14 @@ function App() {
      <Route path='/about' element={<About hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path='/projects' element={<Projects hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path="/projects#projectDetails" component={ProjectDetails} />
-     <Route path='/youtube' element={<Youtube/>}/>
+     <Route path='/youtube' element={<Creative/>}/>
      
 
      
     </Routes>
 
     </div>
-   
+   <Footer/>
  </div>
     
   );

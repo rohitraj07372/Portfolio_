@@ -10,7 +10,7 @@ function Card({details}) {
     <div className='w-[21rem] p-2 group shadow-lg relative    bg-yellow-100   transition-all duration-500 ease hover:shadow-xl     '>
        <p className='absolute -bottom-2 opacity-0 text-purple-700 font-semibold m-4  p-3 flex justify-center items-center   group-hover:opacity-100  z-40 transition-all duration-3
        00 ease-in-out  '>{details.desc.Overview.substring(0,150)+"..."} </p>
-     <div className=' group-hover:opacity-20    text-center transition-all duration-500 '>
+     <div className=' group-hover:opacity-30    text-center transition-all duration-500 '>
      
       <img src={ details.image} alt="PROJECT_IMAGE" className='w-full ' />
        
