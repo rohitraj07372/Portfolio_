@@ -37,7 +37,7 @@ function Home({hamIsClicked, setHamIsClicked}) {
        </div>
     </div>
 
-    <p className='absolute bottom-5 mix-blend-multiply right-0  font-bold text-9xl text-[#FFE24F] opacity-30 stroke-slate-500 pl-3 -z-5 blur-sm '>ROHIT</p>
+    <p className='  bottom-5 mix-blend-multiply right-0  font-bold text-9xl text-[#FFE24F] opacity-30 stroke-slate-500 pl-3 -z-5 fixed cursor-not-allowed pointer-events-none '>ROHIT</p>
     </div>
   )
 }

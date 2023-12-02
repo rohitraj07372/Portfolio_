@@ -54,7 +54,7 @@ const handleMouseLeave = ()=>{
         
        
         </div>
-        <p   className='font-bold text-9xl mix-blend-multiply xs:right-7   text-[#FFF24F] opacity-50 absolute right-0 -bottom-20 pr-7 r read-only:select-none'>ROHIT</p>
+        <p   className='font-bold text-9xl mix-blend-multiply xs:right-7   text-[#FFF24F] opacity-50   right-0 -bottom-20 pr-7 r read-only:select-none pointer-events-none cursor-not-allowed fixed'>ROHIT</p>
       </div>
       <Skills/>
     

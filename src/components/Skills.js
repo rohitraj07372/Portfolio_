@@ -10,7 +10,7 @@ import {FaNodeJs} from 'react-icons/fa'
 
 function Skills() {
   return (
-    <div className='bg-[#4D6AFF] pt-2 pb-2 mt-1 relative bluebg'>
+    <div className='bg-[#4D6AFF] pt-2 pb-2 mt-1 relative bluebg overflow-hidden'>
         <div className='absolute circle top-6 left-8 moving'></div>
         <div className='  circle_blue  absolute bottom-0 right-0 moving2'></div>
       <div className='w-10/12 mx-auto mt-8 mb-5 text-[#FFF24F]  glassmorphic-container   '>
