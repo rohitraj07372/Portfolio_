@@ -8,7 +8,7 @@ import {BiSolidChevronsRight} from 'react-icons/bi'
 
 function Home({hamIsClicked, setHamIsClicked}) {
   return (
-    <div className={`   bg-[#fdf8a9] transition-all duration-300 ease-in ${hamIsClicked?"blur-sm opacity-80 ":""}`}>
+    <div className={`   bg-[#fdf8a9] transition-all duration-300 ease-in ${hamIsClicked ?"blur-sm opacity-80 ":""}`}>
 
      
     <div className='  w-10/12  mx-auto flex gap-2  xs:flex-col-reverse xs:gap-3  xs:justify-evenly xs:items-center  sm:flex-col-reverse xs:h-screen  sm:h-screen  md:flex-row lg:flex-row justify-between items-center md:h-[calc(100vh-3.5rem)]  lg:h-[calc(100vh-3.5rem)]  '>
@@ -18,11 +18,11 @@ function Home({hamIsClicked, setHamIsClicked}) {
          <p  className='text-5xl font-bold text-[#4D6AFF]'>Frontend Developer</p>
          <p className='text-2xl font-bold text-[#4D6AFF]'>"Frontend Alchemist: Turning Pixels into Functional Art."</p>
          <div className=' md:flex mt-4 md:gap-2 lg:flex lg:gap-2 xs:gap-2 sm:gap-2 sm:mb-5 xs:mb-5 md:mb-0 lg:mb-0 xs:flex xs:place-content-center md:place-content-start lg:place-content-start  '>
-         <Link to='/about'><button className='yellowbg  '>LEARN MORE </button></Link>
+         <Link to='/about'><button className='yellowbg cursor-none '>LEARN MORE </button></Link>
 
          
 
-        <a href="https://drive.google.com/uc?export=download&id=1oMGEn4mOLznJB30iX1zvJsABdrACpuGb" download='Rohit_kumar.pdf' target='_resume'><button  className='yellowbg group flex justify-center gap-1 items-center '>RESUME <BiSolidChevronsRight className=' text-xl group-hover:translate-x-2 transition-translate duration-200 ease-in  '/></button></a>
+        <a href="https://drive.google.com/uc?export=download&id=1oMGEn4mOLznJB30iX1zvJsABdrACpuGb" download='Rohit_kumar.pdf' target='_resume '><button  className='yellowbg group flex justify-center gap-1 items-center  '>RESUME <BiSolidChevronsRight className=' text-xl group-hover:translate-x-2 transition-translate duration-200 ease-in  '/></button></a>
          </div>
         
         

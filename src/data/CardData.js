@@ -14,9 +14,7 @@ const data = [
       desc:{
         Overview:" The Classic Calculator project is a straightforward and user-friendly web application that emulates the functionality of a traditional calculator. This project is designed to provide users with a simple and intuitive platform for performing basic mathematical calculations.",
         features:"",
-        Technology:` 
-
-        HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
+        Technology:`HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
        
        },
       title:"Calculator",
@@ -36,9 +34,7 @@ const data = [
      2:`Password Strength Indicator:
      
      The app incorporates a real-time strength indicator, visually guiding users on the robustness of their chosen password.`},
-     Technology:` 
-
-        HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`
+     Technology:`HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`
     
     },
      title:"Password Generator",
@@ -65,9 +61,7 @@ Engage in friendly matches with friends or family, taking turns to make strategi
 
 The application dynamically updates the game board, displaying the current state and highlighting winning moves.`,
         },
-        Technology:` 
-
-        HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
+        Technology:`HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
        
        },
     title:"TIC TAC TOE",
@@ -91,9 +85,7 @@ The application dynamically updates the game board, displaying the current state
         
         The app presents detailed weather data, including temperature, humidity, wind speed, and more, offering a comprehensive overview of current and forecasted conditions.`},
 
-        Technology:` 
-
-        HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
+        Technology:`HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
     
        
        },
@@ -142,9 +134,7 @@ The app provides clear and intuitive instructions, ensuring a seamless and enjoy
 
 Users are left amazed as Math Magic accurately predicts their final answers, leaving them in awe of the magical combination of math and mystery.`,
         },
-        Technology:` 
-
-        HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
+        Technology:`HTML, CSS, JavaScript: The frontend development ensures an interactive and user-friendly experience.`,
        
        },
     title:"Math Magic",
@@ -174,7 +164,7 @@ Explore a diverse range of projects, each with its unique story, challenges, and
 3:`Resume Download: 
 Facilitate easy access to my resume for potential employers, collaborators, or anyone interested in learning more about my professional background.`,
         },
-        Technology:`  React.js: 
+        Technology:`React.js: 
         Building a responsive and interactive user interface.
 React Router:  
  Enabling smooth navigation within the single-page application.

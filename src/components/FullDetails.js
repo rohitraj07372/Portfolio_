@@ -33,13 +33,13 @@ function FullDetails({cardId}) {
             </div>
             <div>
               <div className=' flex flex-col gap-3 '>
-              <div className='rounded-md'><ReactPlayer  controls playing loop url={selectedData.video}   type='video/mp4' width='400px' height="auto"/></div>
+              <div className='rounded-md'><ReactPlayer  controls playing loop url={selectedData.video}   type='video/mp4' width='367px' height="auto"/></div>
              
              
               
               <div className='relative group'>
                 <div className='absolute left-0 bottom-2 z-10 bg-blue-800 text-yellow-300 px-3 py-1   font-bold text-xl w-[40%] group-hover:w-full  transition-all   duration-300  ease-in-out  '><p>Go to project</p></div>
-              <a href={selectedData.link} target='_password'><img className='rounded-lg   transition-all ' src={selectedData.image} alt=""  width='400px'/></a>
+              <a href={selectedData.link} target='_password'><img className='rounded-lg   transition-all ' src={selectedData.image} alt=""  width='367px'/></a>
               </div>
               <a href={selectedData.git} target='_git'><div className='flex gap-3 py-1 rounded-full bg-yellow-400 justify-center items-center text-xl font-bold font-serif hover:bg-blue-700 hover:text-white transition-all duration-300 '>
               <div><FaGithubAlt /></div>

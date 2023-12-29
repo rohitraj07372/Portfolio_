@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-800 py-8">
+    <footer className="bg-white text-gray-800 py-8  ">
       <div className="container w-10/12 mx-auto flex items-center justify-between">
         {/* Company Logo */}
         <div className="flex items-center">
