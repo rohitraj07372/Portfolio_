@@ -12,6 +12,7 @@ import ProjectDetails from './pages/ProjectDetails';
 import { useState } from 'react';
 import Creative from './pages/Creative';
 import Youtube from './pages/Youtube'
+import Illustration from './pages/Illustration';
  
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
      <Navbar hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked} />
       </div>  
    
-    <div className='mt-[3.5rem]'>
+    <div className=''>
 
     <Routes>
 
@@ -45,9 +46,9 @@ function App() {
      <Route path='/about' element={<About hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path='/projects' element={<Projects hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path="/projects#projectDetails" component={ProjectDetails} />
-     <Route path='/creative' element={<Creative/>}/>
-     <Route path='/creative/youtube' element={<Youtube/>}></Route>
-      
+     <Route path='/creative' element={<Creative hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
+     <Route path='/creative/youtube' element={<Youtube hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}></Route>
+      <Route path='/creative/illustration ' element={<Illustration hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}></Route>
      
 
      
