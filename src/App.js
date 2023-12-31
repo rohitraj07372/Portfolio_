@@ -37,7 +37,7 @@ function App() {
      <Navbar hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked} />
       </div>  
    
-    <div className=''>
+    <div className='mt-[3.5rem]'>
 
     <Routes>
 

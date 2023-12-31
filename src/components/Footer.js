@@ -6,9 +6,9 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-
 const Footer = () => {
   return (
     <footer className="bg-white text-gray-800 py-8  ">
-      <div className="container w-10/12 mx-auto flex items-center justify-between">
+      <div className="container w-10/12 mx-auto grid xs:grid-cols-1 xs:grid-rows-2 md:grid-cols-2 md:grid-rows-1 xs:place-items-center    ">
         {/* Company Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center place-self-start ">
           <img
             src={logo} // Replace with your company logo
             alt="Company Logo"
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 place-self-end  ">
           <a href="https://www.facebook.com/profile.php?id=100007583531392" target="_blank" rel=" ">
             <FaFacebook className="text-2xl hover:text-blue-700 transition-all" />
           </a>
