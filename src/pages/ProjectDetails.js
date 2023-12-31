@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { IoMdArrowRoundBack } from "react-icons/io";
 import FullDetails from '../components/FullDetails';
-import Footer from '../components/Footer';
+ 
  
 
 

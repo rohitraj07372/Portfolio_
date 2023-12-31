@@ -1,7 +1,7 @@
  
 import data from '../../../portfolio_/src/data/CardData'
 import Cards from '../../../portfolio_/src/components/Cards'
-import Footer from '../components/Footer';
+ 
 
 
 function Projects({hamIsClicked, setHamIsClicked}) {
