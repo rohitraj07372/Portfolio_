@@ -74,8 +74,8 @@ useEffect(()=>{
         <div class="g-ytsubscribe " data-channelid="UChUYAjYRl9dTtna5ZET3E5Q" data-layout="full" data-count="default"></div> </div>
  
     
-    <Link to={-1}><button className='py-2 px-3 flex  items-center fixed top-20 text-white bg-slate-700 font-bold rounded-full justify-center  '> <IoCaretBackOutline />  </button></Link>
-  </div>
+    <Link to='/creative'><button className='py-2 px-3 flex z-10 items-center fixed top-20 text-white bg-slate-700 font-bold rounded-full justify-center  '> <IoCaretBackOutline />  </button></Link>
+  </div> 
 
   <Helmet><script src="https://apis.google.com/js/platform.js"></script></Helmet>
 

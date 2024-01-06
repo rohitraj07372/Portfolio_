@@ -16,7 +16,7 @@ useEffect(()=>{
 const fetchData = async () => {
     try{
         const API_KEY = "AIzaSyAGTb_pLgXcZZFv2avDp38UkhXC3rNmNKc";
-        const response = await fetch(` https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=UUhUYAjYRl9dTtna5ZET3E5Q&key=${API_KEY}`);
+        const response = await fetch(` https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=1000&playlistId=UUhUYAjYRl9dTtna5ZET3E5Q&key=${API_KEY}`);
         
         const res = await response.json();
         setData(res);

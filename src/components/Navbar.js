@@ -39,7 +39,9 @@ function Navbar({hamIsClicked, setHamIsClicked}) {
         <NavLink to='/projects'>
         <h1 className='px-2'onClick={()=>setHamIsClicked(false)}>Projects</h1>
         </NavLink>
-
+        <NavLink to='/contact'>
+          <h1 className='px-2'onClick={()=>setHamIsClicked(false)}>Conatct</h1>
+        </NavLink>
         <NavLink to='/creative'>
           <h1 className='px-2'onClick={()=>setHamIsClicked(false)}>Creative</h1>
         </NavLink>

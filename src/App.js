@@ -13,7 +13,8 @@ import { useState } from 'react';
 import Creative from './pages/Creative';
 import Youtube from './pages/Youtube'
 import Illustration from './pages/Illustration';
- 
+import Contact from './pages/Contact';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const [hamIsClicked, setHamIsClicked] = useState(false);
@@ -31,6 +32,7 @@ function App() {
 //   },[])
   
   return (
+    
     <div className="  ">
     <Butterfly/>
      <div>
@@ -45,7 +47,9 @@ function App() {
      <Route path='/' element={<Home hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path='/about' element={<About hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path='/projects' element={<Projects hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
+     <Route path='/contact' element={<Contact hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path="/projects#projectDetails" component={ProjectDetails} />
+       
      <Route path='/creative' element={<Creative hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}/>
      <Route path='/creative/youtube' element={<Youtube hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}></Route>
       <Route path='/creative/illustration ' element={<Illustration hamIsClicked={hamIsClicked} setHamIsClicked={setHamIsClicked}/>}></Route>
