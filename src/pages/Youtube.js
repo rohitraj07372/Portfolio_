@@ -9,12 +9,15 @@ import YoutubeData from '../data/YoutubeData';
 
 function Youtube({hamIsClicked}) {
 
-  
-  const [video, setVideo] = useState("");
+  const {data} = YoutubeData();
+   const videoId =  data.items && data.items[0] ? data.items[0].snippet.resourceId.videoId : '';
+  const [video, setVideo] = useState(``);
   const [loading, setLoading] = useState(true);
+   
+  
 
 
-   const {data} = YoutubeData();
+   
    
   useEffect(() => {
 
@@ -41,8 +44,9 @@ function Youtube({hamIsClicked}) {
   }, []);
    
   
-const [vId, setVId] = useState("");
-  
+const [vId, setVId] = useState(`${videoId}`);
+
+  console.log("video ID is = "+vId);
 const [videoUrl, setVideoUrl] = useState(`https://www.youtube.com/embed/${vId}?si=_FkFK_-9d1UBmqvj`);
 
 const handleExternalVideoPlayIdChange = (newVideoPlayId) => {
@@ -84,7 +88,7 @@ useEffect(()=>{
   </div>
    
  
-<div id='video_section ' className='w-full p-8 min-h-screen flex xs:flex-wrap lg:flex-nowrap gap-5 bg-slate-900'>
+<div id='video_section ' className='w-full p-8 min-h-screen flex xs:flex-wrap lg:flex-nowrap gap-5 bg-slate-900 relative'>
 
 
    <div className='lg:w-[60%] xs:w-full mt-4 rounded-md'>
@@ -93,7 +97,10 @@ useEffect(()=>{
 <iframe className='rounded-lg'  width="100%" height="480px" src={videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
    </div>
+   <div className='bg-yellow-400 font-bold rounded-md  py-1  xs:mx-auto   md:absolute md:right-[16%] px-5 text-center    '> click to play.</div>
    <div className='lg:w-[40%] flex flex-wrap justify-center gap-2 h-[480px] xs:w-full overflow-hidden overflow-y-scroll p-4 border rounded-md mt-4'>
+
+    
 
       <YoutubeCard onVideoPlayIdChange={handleExternalVideoPlayIdChange}/>
       

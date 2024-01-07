@@ -7,7 +7,8 @@ const {data, loading} = YoutubeData();
 const youtube_data = data.items;
  
  
-  const [videoPlayId, setVideoPlayId] = useState("");
+ 
+  const [videoPlayId, setVideoPlayId] = useState(``);
    
 
   const handleVideoPlayIdChange = (newVideoPlayId) => {
@@ -18,16 +19,24 @@ const youtube_data = data.items;
       onVideoPlayIdChange(newVideoPlayId);
     }
   };
-   
+   let first = "";
   return (
     
     <div className='flex flex-col items-center'>
         {
+           
             youtube_data?.map((data)=>{
                return( <div>
                     <div className=' mb-3 cursor-pointer' onClick={()=>{
                         
                         handleVideoPlayIdChange(data.snippet.resourceId.videoId)
+                    }} onLoad={()=>{
+                      if(first ===""){
+                        first = data.snippet.resourceId.videoId;
+                      }
+                       
+                          
+                      handleVideoPlayIdChange(first);
                     }}>
                         <img src={data.snippet.thumbnails.high.url} alt="" />
                         <p className='bg-white font-bold text-slate-700 px-2 '>{data.snippet.title}</p>
