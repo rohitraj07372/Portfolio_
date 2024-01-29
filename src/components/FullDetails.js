@@ -8,7 +8,7 @@ function FullDetails({cardId}) {
   const selectedData = data.find(data =>data.id === cardId);
   const features = selectedData.desc.features;
   
-
+   console.log("video link is"+selectedData.video);
   return (
     <div className='mt-24'>
       {console.log(selectedData.video )}
@@ -37,10 +37,10 @@ function FullDetails({cardId}) {
              
              
               
-              <div className='relative group'>
+              <a href={selectedData.link} target='_password'>  <div className='relative group'>
                 <div className='absolute left-0 bottom-2 z-10 bg-blue-800 text-yellow-300 px-3 py-1   font-bold text-xl w-[40%] group-hover:w-full  transition-all   duration-300  ease-in-out  '><p>Go to project</p></div>
-              <a href={selectedData.link} target='_password'><img className='rounded-lg   transition-all ' src={selectedData.image} alt=""  width='367px'/></a>
-              </div>
+               <img className='rounded-lg   transition-all ' src={selectedData.image} alt=""  width='367px'/>
+              </div></a>
               <a href={selectedData.git} target='_git'><div className='flex gap-3 py-1 rounded-full bg-yellow-400 justify-center items-center text-xl font-bold font-serif hover:bg-blue-700 hover:text-white transition-all duration-300 '>
               <div><FaGithubAlt /></div>
               <p>Git Hub Repo.</p>

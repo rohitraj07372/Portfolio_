@@ -17,8 +17,8 @@ function Creative({hamIsClicked}) {
         
     <div className=' xs:w-11/12 sm:w-11/12 md:w-8/12 mx-auto place-items-center  xs:grid xs:grid-cols-1   md:grid md:grid-cols-3   gap-4  p-1  font-bold text3xl'>
           <NavLink to='/creative/youtube'><CreativeCard image={youtube_image} text={youtube}  /></NavLink>
-          <NavLink to='/creative/illustration'><CreativeCard image={illustration_image} text={illustration}  /></NavLink>
-          <NavLink to='/creative/instagram'><CreativeCard image={instagram_image} text={Instagram}  /></NavLink>
+          <NavLink to='/creative/illustration' className='relative'><div className='absolute top-0   w-[100%]   rounded-md bg-red-500 text-white font-bold px-2 py-1 text-center'>under progress</div><CreativeCard image={illustration_image} text={illustration}  /></NavLink>
+          <NavLink to='/creative/instagram'className='relative'><div className='absolute top-0   w-[100%]   rounded-md bg-red-500 text-white font-bold px-2 py-1 text-center'>under progress</div> <CreativeCard image={instagram_image} text={Instagram}  /></NavLink>
           
     </div>
     </div>

@@ -119,6 +119,7 @@ The application boasts an intuitive and visually appealing design, ensuring a us
 {id: 6,
     git:"https://github.com/rohitraj07372/Js_projects/tree/master/mathMagic",
     image: maths ,
+    
     video:"https://drive.google.com/uc?export=download&id=1-xbAd5V6xKnIOrlJMr7E7qNBwDoEv0nS",
     desc: {
         Overview:" Experience the enchantment of Math Magic, a captivating web project that combines mathematics and mind-reading for an interactive and intriguing experience. Follow the on-screen instructions, and witness the app attempt to predict your thoughts through a series of mathematical operations.",

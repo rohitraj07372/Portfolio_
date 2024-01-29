@@ -1,12 +1,15 @@
 import React from 'react';
 import logo from '../assets/logo.png'
-
+import './footer.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-800 py-8  ">
+    <section className='relative '>
+<footer className="footer-bg  text-gray-800 py-8 ">
       <div className="container w-10/12 mx-auto grid xs:grid-cols-1 xs:grid-rows-2 md:grid-cols-2 md:grid-rows-1 xs:place-items-center    ">
+
+        
         {/* Company Logo */}
         <div className="flex items-center place-self-start ">
           <img
@@ -37,6 +40,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </section>
+    
   );
 };
 

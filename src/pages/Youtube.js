@@ -6,6 +6,9 @@ import { Helmet } from 'react-helmet';
 import ReactPlayer from 'react-player';
 import YoutubeCard from '../components/YoutubeCard';
 import YoutubeData from '../data/YoutubeData';
+import './youtube.css'
+import {Link as ScrollLink} from 'react-scroll'
+ 
 
 function Youtube({hamIsClicked}) {
 
@@ -13,11 +16,25 @@ function Youtube({hamIsClicked}) {
    const videoId =  data.items && data.items[0] ? data.items[0].snippet.resourceId.videoId : '';
   const [video, setVideo] = useState(``);
   const [loading, setLoading] = useState(true);
-   
-  
+  const [title, setTitle] = useState("");
+  const [allYoutubeData, setAllYoutubeData] = useState([]);
+
+//get video title from youtube card component
+   function videoTitle(title){
+    setTitle(title);
+   }
+   function getAllYoutubeData(allVideos){
+    setAllYoutubeData(allVideos);
+   }
 
 
-   
+   // getting all videos 
+
+   const [allVideo, setAllVideo] = useState([]);
+   function setAllYoutubeVideo(allVideo){
+    setAllVideo(allVideo);
+
+   }
    
   useEffect(() => {
 
@@ -68,7 +85,7 @@ useEffect(()=>{
   <div className='absolute top-[50%] left-[50%] z-[10] text-white font-bold text-[2rem] -translate-x-[50%] -translate-y-[50%]'><h1>You can watch my <span className='text-white rounded-full px-4 py-1 bg-red-600' >YOUTUBE</span> videos here.</h1></div> 
       
       {/* black gradient*/}
-    <div className='w-full h-full z-[1] bg-gradient-to-t from-slate-900 absolute bottom-0'></div>
+    <div className='w-full h-full z-[1]  gradient  absolute bottom-0'></div>
 
   <div className={` p-3 xs:w-full   mx-auto  relative  `}>
      {/* *******************logo and subscribe button************************ */}
@@ -88,24 +105,59 @@ useEffect(()=>{
   </div>
    
  
-<div id='video_section ' className='w-full p-8 min-h-screen flex xs:flex-wrap lg:flex-nowrap gap-5 bg-slate-900 relative'>
+<div id='video'  className='w-full  p-8 min-h-screen flex xs:flex-wrap lg:flex-nowrap gap-5 bg-slate-900 relative'>
 
 
-   <div className='lg:w-[60%] xs:w-full mt-4 rounded-md'>
+   <div className='lg:w-[60%] xs:w-full mt-4  rounded-md' >
      {/* *******************youtube video embade************************ */}
    
 <iframe className='rounded-lg'  width="100%" height="480px" src={videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<div className='font-bold text-white text-xl mt-2'>{title}</div>
+
    </div>
-   <div className='bg-yellow-400 font-bold rounded-md  py-1  xs:mx-auto   md:absolute md:right-[16%] px-5 text-center    '> click to play.</div>
-   <div className='lg:w-[40%] flex flex-wrap justify-center gap-2 h-[480px] xs:w-full overflow-hidden overflow-y-scroll p-4 border rounded-md mt-4'>
+   <div className='bg-yellow-400 font-bold rounded-md  py-1  xs:mx-auto   md:absolute md:right-[16%] top-[10px] px-5 text-center    '> Latest 5 videos <br/> <span className='text-blue-700 bg-white rounded-full px-2 py-1'>click to play.</span></div>
+   <div className='lg:w-[40%] flex flex-wrap justify-center gap-2 h-[480px] xs:w-full overflow-hidden overflow-y-scroll p-4 border    rounded-md mt-4'>
+     
+     {/*     latest 5 videos of youtube */}
+     
 
-    
+    <ScrollLink to='video' smooth='true'><YoutubeCard allYoutubeData = {getAllYoutubeData} getAllVideo = {setAllYoutubeVideo} videoTitle = {videoTitle} onVideoPlayIdChange={handleExternalVideoPlayIdChange}/>
+      </ScrollLink> 
+   </div>
 
-      <YoutubeCard onVideoPlayIdChange={handleExternalVideoPlayIdChange}/>
+</div>
+
+<div className='w-full  bg-slate-900 '>
+
+ {/* all youtube videos */}
+
+ <div className='bg-yellow-400 font-bold rounded-md  py-1  xs:mx-auto    px-5 text-center    '> All videos <br/> <span className='text-blue-700 bg-white rounded-full px-2 py-1'>click to play.</span></div>
+
+ <div className='w-[90%] h-[100vh] border-4 rounded-sm flex flex-wrap  justify-center gap-4     overflow-hidden overflow-y-scroll p-4       border-yellow-400 '>
+    {
+        
+        allVideo?.map((data)=>{
+           return( <ScrollLink to='video' smooth='true'> <div className='xs:w-full md:w-[15rem]'>
+                <div className=' mb-3 cursor-pointer' onClick={()=>{
+                    
+                    setVId(data.snippet.resourceId.videoId)
+                    videoTitle(data.snippet.title);
+                }}  >
+                    <img src={data.snippet.thumbnails.high.url} alt="" />
+                    <p className='bg-white font-bold  text-slate-700 px-2 '>{data.snippet.title.length > 50?data.snippet.title.slice(0, 50) + '...': data.snippet.title}</p>
+                </div>
+                {/* <p>id = {videoPlayId}</p> */}
+            </div>
+            </ScrollLink>
+            
+           )
+        })
       
-   </div>
-
+    }
+    
+</div>
+  
 </div>
 
    </div>

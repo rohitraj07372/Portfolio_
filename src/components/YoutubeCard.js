@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
 import YoutubeData from '../data/YoutubeData'
 
-function YoutubeCard({onVideoPlayIdChange}) {
+function YoutubeCard({onVideoPlayIdChange, videoTitle, allYoutubeData, getAllVideo}) {
 
 const {data, loading} = YoutubeData();
-const youtube_data = data.items;
+
+
+
+//  for(let i=0;i<5 && all_youtube_data.length ;i++){
+//     youtube_data.push(data.items[i]);
+//  }
+//  console.log("5 data = "+youtube_data);
+
  
  
  
@@ -20,19 +27,36 @@ const youtube_data = data.items;
     }
   };
    let first = "";
+
+   if (loading) {
+    return <p>Loading...</p>;  // You can replace this with your loading indicator
+  }
+
+  let youtube_data = [];
+// console.log("length is" + (youtube_data?.length || 0));
+const all_youtube_data = data?.items || [];
+
+for(let i=0;i<5 && all_youtube_data.length;i++){
+  youtube_data.push(all_youtube_data[i]);
+}
+  allYoutubeData(all_youtube_data);
+getAllVideo(all_youtube_data);
+
   return (
-    
+   
     <div className='flex flex-col items-center'>
         {
-           
+            
             youtube_data?.map((data)=>{
                return( <div>
                     <div className=' mb-3 cursor-pointer' onClick={()=>{
                         
                         handleVideoPlayIdChange(data.snippet.resourceId.videoId)
+                        videoTitle(data.snippet.title);
                     }} onLoad={()=>{
                       if(first ===""){
                         first = data.snippet.resourceId.videoId;
+                        videoTitle(data.snippet.title);
                       }
                        
                           

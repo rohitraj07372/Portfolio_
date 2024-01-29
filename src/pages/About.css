@@ -129,3 +129,22 @@ transform: scale(1);
        top: 3%;
    }
 }
+
+.arrow {
+   
+   transform: rotate(45deg);
+   animation: bounce 1s infinite alternate;
+ }
+ 
+ @keyframes bounce {
+   0% {
+     transform: translateY(0);
+   }
+   100% {
+     transform: translateY(-10px);
+   }
+ }
+ 
+ .down-arrow-button:hover .arrow {
+   animation: none; /* Disable the bounce animation on hover */
+ }
