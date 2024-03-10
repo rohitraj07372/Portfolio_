@@ -22,10 +22,10 @@ function Home({hamIsClicked, setHamIsClicked}) {
 
          
 
-        <a href="https://drive.google.com/uc?export=download&id=1oMGEn4mOLznJB30iX1zvJsABdrACpuGb" download='Rohit_kumar.pdf' target='_resume '><button  className='yellowbg group flex justify-center gap-1 items-center  '>RESUME <BiSolidChevronsRight className=' text-xl group-hover:translate-x-2 transition-translate duration-200 ease-in  '/></button></a>
+        <a href="https://drive.google.com/uc?export=download&id=1S4jjgwaoN-o3fpPfJdzYeL4TkZiNv9wH" download='Rohit_kumar.pdf' target='_resume '><button  className='yellowbg group flex justify-center gap-1 items-center  '>RESUME <BiSolidChevronsRight className=' text-xl group-hover:translate-x-2 transition-translate duration-200 ease-in  '/></button></a>
          </div>
-        
-        
+         {/* https://drive.google.com/file/d/1S4jjgwaoN-o3fpPfJdzYeL4TkZiNv9wH/view?usp=sharing
+         */}
        </div>
 
 
