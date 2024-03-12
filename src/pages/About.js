@@ -40,10 +40,10 @@ const [typeEffect] = useTypewriter({
 
       </div>
     <div id='about_section' className={`bg-[#f8ecae] pt-4 pb-4 transition-all duration-300 ease-in ${hamIsClicked?"blur-sm opacity-80 ":""}`}>
-      <p className='font-bold text-4xl  w-full text-center mb-6 underline text-[#4D6AFF]  pt-4  '>Welcome to Rohit Kumar's Portfolio</p>
+      <p className='font-bold text-4xl  w-full text-center mb-6  text-[#3b3b3b]  pt-4  '>Welcome to Rohit Kumar's Portfolio</p>
       <div  className='flex justify-between w-10/12 mx-auto xs:flex-col-reverse xs:gap-8  md:gap-1 sm:flex-col-reverse sm:items-center md:justify-between lg:justify-between md:items-start lg:items-start sm:w-full md:w-10/12 lg:w-10/12 md:flex-row sm:mx-auto xs:mx-auto xs:items-center xs:w-full  lg:flex-row '>
-      <div className='w-[50%] xs:w-10/12 sm:w-10/12  md:w-[50%] lg:w-[50%] text-[#4D6AFF] '>
-        <p className='font-bold text-xl text-[#4D6AFF] underline mb-2'>About Me</p>
+      <div className='w-[50%] xs:w-10/12 sm:w-10/12  md:w-[50%] lg:w-[50%] text-[#464646]  bg-white mb-2 p-5 rounded-lg'>
+        <p className='font-bold text-xl text-[#444444]  mb-2'>About Me</p>
         <p>
 {/*  about section   */}
 
