@@ -10,7 +10,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Skills from '../../../portfolio_/src/components/Skills'
 import { RiArrowDownCircleFill } from "react-icons/ri";
 import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter'
-import video from "../assets/video/loveBaloon.mp4"
+import video from "../assets/video/color.mp4"
 
 function About({ hamIsClicked, setHamIsClicked }) {
   const [hover, setHover] = useState(false);
@@ -32,7 +32,7 @@ function About({ hamIsClicked, setHamIsClicked }) {
   return (
     <div>
       <div className={`relative h-[calc(100vh-3.5rem)] w-full flex justify-center items-center   xs:bg-cover  bg-no-repeat    lg:bg-cover bg-fixed overflow-hidden  `}>
-        <div>
+        <div className='bg-cover '>
           <video autoPlay muted loop className=" ">
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
@@ -40,7 +40,7 @@ function About({ hamIsClicked, setHamIsClicked }) {
           {/* <img className='fixed' src={portfolio}   alt="banner" /> */}
           <ScrollLink to='about_section' smooth={true}><button className='font-bold text-4xl translate-x-[50%] text-blue-700 arrow absolute bottom-7 right-[50%]'><RiArrowDownCircleFill /></button></ScrollLink>
 
-          <div className='md:absolute  text-center  xs:absolute xs:top-[22%] xs:left-[25%]   md:translate-y-[50%]   font-bold '><h1 className='md:text-8xl xs:text-7xl font-rohit text-yellow-500'>Rohit Kumar</h1><span className='md:text-6xl xs:text-5xl font-designation text-red-500'>{typeEffect}</span></div>
+          <div className=' absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]      font-bold '><h1 className='md:text-8xl xs:text-7xl font-rohit text-yellow-700'>Rohit Kumar</h1><span className='md:text-6xl xs:text-5xl font-designation text-red-500'>{typeEffect}</span></div>
         </div>
       </div>
       <div id='about_section' className={`bg-[#f8ecae] pt-4 pb-4 transition-all duration-300 ease-in ${hamIsClicked ? "blur-sm opacity-80 " : ""}`}>
